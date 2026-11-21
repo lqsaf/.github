@@ -1,4 +1,4 @@
-name = "lqsaf-hub-worker"
+name = "lqsaf-worker"
 main = "worker.js"
 compatibility_date = "2026-11-11"
 workers_dev = true
