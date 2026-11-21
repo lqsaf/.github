@@ -1,4 +1,4 @@
-name = "lqsaf-hub-worker"
+name = "lqsaf-worker"
 main = "worker.js"
 compatibility_date = "2026-11-11"
 workers_dev = true
@@ -7,11 +7,3 @@ preview_urls = true
 # Автоматический запуск строго раз в час (в начале каждого часа)
 [triggers]
 crons = ["0 * * * *"]
-
-# Постоянное хранилище снимка статусов (по аналогии с FAIN_KV в fain-worker):
-# [[kv_namespaces]]
-# binding = "HUB_KV"
-# id = "ВСТАВЬ_ID_СВОЕГО_KV"
-
-# Опционально: секрет GITHUB_TOKEN (npx wrangler secret put GITHUB_TOKEN)
-# повышает лимит GitHub API с 60 до 5000 запросов в час.
