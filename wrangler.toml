@@ -1,0 +1,9 @@
+name = "lqsaf-worker"
+main = "worker.js"
+compatibility_date = "2026-11-11"
+workers_dev = true
+preview_urls = true
+
+# Автоматический запуск строго раз в час (в начале каждого часа)
+[triggers]
+crons = ["0 * * * *"]
