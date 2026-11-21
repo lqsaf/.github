@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%">
+  <!-- toyk: transfer of your keys — minimalist symmetric dual-key exchange -->
+  <g fill="none" stroke="#ffffff" stroke-width="54" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Top key pointing right -->
+    <circle cx="295" cy="365" r="115" />
+    <line x1="410" y1="365" x2="800" y2="365" />
+    <line x1="670" y1="365" x2="670" y2="465" />
+    <line x1="775" y1="365" x2="775" y2="450" />
+    <!-- Bottom key pointing left -->
+    <circle cx="705" cy="635" r="115" />
+    <line x1="590" y1="635" x2="200" y2="635" />
+    <line x1="330" y1="635" x2="330" y2="535" />
+    <line x1="225" y1="635" x2="225" y2="550" />
+  </g>
+  <circle cx="295" cy="365" r="34" fill="#ffffff" />
+  <circle cx="705" cy="635" r="34" fill="#ffffff" />
+</svg>

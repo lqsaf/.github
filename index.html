@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>lqsaf — hub</title>
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="./logos/fainlogo.svg"
+  />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <!-- Фоновые ASCII волновые функции (при соприкосновении рождаются новые) -->
+  <canvas id="wave-canvas" aria-hidden="true"></canvas>
+  <div class="bg-vignette" aria-hidden="true"></div>
+
+  <div class="page-shell">
+    <header class="terminal-bar">
+      <div class="brand-prompt">
+        <span class="prompt-tilde">~/</span><span>lqsaf</span>
+        <span class="prompt-cursor" aria-hidden="true"></span>
+      </div>
+
+      <div class="terminal-controls">
+        <button
+          id="waves-toggle-btn"
+          class="term-chip"
+          type="button"
+          title="Включить / выключить фоновые ASCII-волны"
+        >
+          ascii::on
+        </button>
+      </div>
+    </header>
+
+    <main class="hub-main">
+      <!-- 1-я область: Проекты (автосортировка по GitHub раз в час) -->
+      <section class="hub-area" id="projects-area" aria-labelledby="projects-title">
+        <div class="area-header">
+          <h2 id="projects-title" class="area-title">
+            <span class="area-slash">//</span>
+            <span>проекты</span>
+          </h2>
+          <span id="projects-meta" class="area-meta"></span>
+        </div>
+
+        <div id="projects-groups" class="status-groups" aria-live="polite">
+          <!-- Автоматически обновляется воркером раз в час -->
+        </div>
+      </section>
+
+      <!-- 2-я область: Соцсети (в таком же формате иконок приложений) -->
+      <section class="hub-area" id="socials-area" aria-labelledby="socials-title">
+        <div class="area-header">
+          <h2 id="socials-title" class="area-title">
+            <span class="area-slash">//</span>
+            <span>соцсети</span>
+          </h2>
+          <span id="socials-meta" class="area-meta">@lqsaf</span>
+        </div>
+
+        <div id="socials-grid" class="app-grid">
+          <!-- Заполняется из SOCIALS -->
+        </div>
+      </section>
+    </main>
+
+    <!-- Низ сайта: кнопка «бесплатно поддержать» (пока без ссылки) -->
+    <footer class="site-footer">
+      <button id="support-btn" class="support-btn" type="button">
+        <span class="support-prefix" aria-hidden="true">$</span>
+        <span id="support-btn-label">бесплатно поддержать</span>
+      </button>
+      <p id="support-hint" class="support-hint" aria-live="polite"></p>
+    </footer>
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
